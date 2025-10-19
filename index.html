@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gaming WorkPlace</title>
   <style>
     body {
@@ -22,20 +22,27 @@
       100% { background-position: 0% 50%; }
     }
 
+    /* ======= HEADER ======= */
     header {
-      background: rgba(0, 0, 40, 0.7);
-      padding: 20px 0;
+      background: rgba(0, 0, 40, 0.85);
+      padding: 10px 15px;
       border-bottom: 2px solid #00aaff;
       box-shadow: 0 0 20px #0077ff;
-      position: sticky;
+      position: fixed;
       top: 0;
-      z-index: 100;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     header img {
-      width: 120px;
+      width: 90px;
       border-radius: 50%;
       box-shadow: 0 0 25px #00aaff;
+      margin-bottom: 8px;
     }
 
     @keyframes neonGlow {
@@ -50,19 +57,22 @@
     }
 
     h1 {
-      font-size: 2.7em;
-      margin-top: 10px;
+      font-size: 2em;
+      margin: 5px 0;
       animation: neonGlow 2s infinite alternate;
     }
 
     nav {
-      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
     }
 
     nav a {
       color: #00aaff;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
       transition: color 0.3s;
     }
@@ -84,8 +94,9 @@
       box-shadow: 0 0 15px #ff3333;
     }
 
+    /* ======= CONTENT ======= */
     section {
-      padding: 60px 20px;
+      padding: 80px 20px; /* compensare pentru header fix */
       max-width: 900px;
       margin: auto;
     }
@@ -159,7 +170,7 @@
 <body>
 
   <header>
-    <img src="gwplogo.png" alt="Gaming WorkPlace Logo">
+    <img src="image.png" alt="Gaming WorkPlace Logo" />
     <h1>Gaming WorkPlace</h1>
     <nav>
       <a href="#about">About</a>
@@ -182,17 +193,17 @@
     <h2>Featured Games</h2>
     <div class="game-list">
       <div class="game-card">
-        <img src="cs2.jpg" alt="Counter-Strike 2">
+        <img src="cs2.jpg" alt="Counter-Strike 2" />
         <h3>Counter-Strike 2</h3>
         <p>Experience tactical gameplay, precision shooting, and intense team battles in the next generation of Counter-Strike.</p>
       </div>
       <div class="game-card">
-        <img src="rust.jpg" alt="Rust">
+        <img src="rust.jpg" alt="Rust" />
         <h3>Rust</h3>
         <p>Survive, build, and fight for resources in a tough, realistic world.</p>
       </div>
       <div class="game-card">
-        <img src="minecraft.jpg" alt="Minecraft">
+        <img src="minecraft.jpg" alt="Minecraft" />
         <h3>Minecraft</h3>
         <p>Infinite creativity and block-by-block adventures in the cubic universe.</p>
       </div>
@@ -213,4 +224,5 @@
 
 </body>
 </html>
+
 
