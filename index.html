@@ -20,9 +20,6 @@
   <!-- ✅ Favicon -->
   <link rel="icon" type="image/png" href="image.png" />
 
-  <!-- ✅ Google Search Console Verification (optional) -->
-  <!-- <meta name="google-site-verification" content="CODUL_TAU_DE_VERIFICARE" /> -->
-
   <style>
     body {
       margin: 0;
@@ -130,6 +127,19 @@
       font-size: 0.9em;
     }
 
+    .video-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 0 20px #0077ff;
+    }
+
     .game-list {
       display: flex;
       justify-content: center;
@@ -208,16 +218,21 @@
       nav a {
         font-size: 0.9em;
       }
+
+      iframe {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="gwplogo.png" alt="Gaming WorkPlace Logo" />
+    <img src="image.png" alt="Gaming WorkPlace Logo" />
     <h1>Gaming WorkPlace</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#videos">Videos</a>
       <a href="#games">Games</a>
       <a href="#contact">Contact</a>
       <a href="https://www.youtube.com/@Gamingworkplace1" target="_blank" class="yt-link">🔴 YouTube</a>
@@ -231,6 +246,16 @@
 
     <h3 class="subsection-title">About us</h3>
     <p>Hello, we are a group of people who want to make videos about certain games. We want all the videos we will make to have a positive effect on the person watching. The channel is dedicated to video games. The public regardless of age will have something interesting to find in the videos that we will make with love. 👋</p>
+  </section>
+
+  <!-- 🎬 NEW SECTION: Latest Videos -->
+  <section id="videos">
+    <h2>Latest Videos</h2>
+    <div class="video-list">
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
   <section id="games">
@@ -268,4 +293,3 @@
 
 </body>
 </html>
-
