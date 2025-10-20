@@ -126,6 +126,13 @@
       margin-top:8px;
     }
 
+    .video-subtext {
+      color:#88bbff;
+      font-size:1em;
+      margin-top:-10px;
+      text-shadow: 0 0 8px #0077ff;
+    }
+
     .game-list {
       display:flex;
       justify-content:center;
@@ -190,6 +197,7 @@
 <!-- 🎬 Latest Videos -->
 <section id="videos">
   <h2>Latest Videos</h2>
+  <p class="video-subtext">🎮 Check out our latest YouTube uploads — even if they’re older, they’re still packed with fun and energy!</p>
   <div id="video-grid" class="video-grid">
     <p>Loading latest videos...</p>
   </div>
@@ -230,8 +238,8 @@
 
 <!-- ✅ YouTube API Script -->
 <script>
-  const API_KEY = key=AIzaSyAMDGJJwDdygvAtZAJVird-pV3Jr6TC9CY; // 🔑 cheia ta YouTube Data API
-  const CHANNEL_ID = UCt4b-f_VzVZSqLXSoFY4h6Q; // 🔠 ID-ul canalului tău
+  const API_KEY = "YOUR_API_KEY_HERE"; // 🔑 cheia ta YouTube Data API
+  const CHANNEL_ID = "YOUR_CHANNEL_ID_HERE"; // 🔠 ID-ul canalului tău
   const MAX_RESULTS = 3;
 
   async function loadLatestVideos() {
@@ -274,6 +282,3 @@
 
 </body>
 </html>
-
-
-
