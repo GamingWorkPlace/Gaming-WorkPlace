@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaming WorkPlace | Official Gaming Channel</title>
+  <title>Gaming WorkPlace (GWP) | Official Gaming Channel</title>
 
   <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="Welcome to Gaming WorkPlace 🎮 — a YouTube channel and community dedicated to gaming videos, tutorials, and funny moments. We create positive and entertaining content for all ages — from CS2 and Rust to Minecraft and beyond! | Gaming WorkPlace România — canal dedicat jocurilor video și divertismentului pentru toate vârstele." />
-  <meta name="keywords" content="gaming workplace, gaming channel, cs2, counter-strike 2, rust, minecraft, youtube gamers, gaming community, gameplay videos, tutorials, gaming fun, positive gaming, canal gaming românesc, jocuri video, divertisment" />
+  <meta name="description" content="Gaming WorkPlace (GWP) 🎮 — a YouTube channel and community dedicated to gaming videos, tutorials, and funny moments. We create positive and entertaining content for all ages — from CS2 and Rust to Minecraft and beyond! | Gaming WorkPlace România — canal dedicat jocurilor video și divertismentului pentru toate vârstele." />
+  <meta name="keywords" content="gaming workplace, gwp, gaming channel, cs2, counter-strike 2, rust, minecraft, youtube gamers, gaming community, gameplay videos, tutorials, gaming fun, positive gaming, canal gaming românesc, jocuri video, divertisment" />
   <meta name="author" content="Gaming WorkPlace Team" />
 
+  <!-- ✅ Canonical URL -->
+  <link rel="canonical" href="https://gamingworkplace.github.io/Gaming-WorkPlace/" />
+
+  <!-- ✅ Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Gaming WorkPlace",
+    "alternateName": "GWP",
+    "url": "https://gamingworkplace.github.io/Gaming-WorkPlace/",
+    "logo": "https://gamingworkplace.github.io/Gaming-WorkPlace/gwplogo.png",
+    "sameAs": [
+      "https://www.youtube.com/@Gamingworkplace1",
+      "https://discord.com/channels/1260726327280013362/1327712645381357663/1429240465210998824"
+    ]
+  }
+  </script>
+
   <!-- ✅ Open Graph -->
-  <meta property="og:title" content="Gaming WorkPlace | Official Gaming Channel" />
-  <meta property="og:description" content="Join the Gaming WorkPlace team for exciting gameplay, tutorials, and fun gaming moments from CS2, Rust, Minecraft and more!" />
-  <meta property="og:image" content="https://andrei-gamer.github.io/gaming-workplace/image.png" />
-  <meta property="og:url" content="https://andrei-gamer.github.io/gaming-workplace/" />
+  <meta property="og:title" content="Gaming WorkPlace (GWP) — Official Gaming Channel" />
+  <meta property="og:description" content="Gaming WorkPlace (GWP): comunitate de gaming, videoclipuri, ghiduri și momente amuzante din CS2, Rust și Minecraft!" />
+  <meta property="og:image" content="https://gamingworkplace.github.io/Gaming-WorkPlace/gwplogo.png" />
+  <meta property="og:url" content="https://gamingworkplace.github.io/Gaming-WorkPlace/" />
   <meta property="og:type" content="website" />
 
-  <link rel="icon" type="image/png" href="image.png" />
+  <!-- ✅ Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gaming WorkPlace (GWP) — Official Gaming Channel">
+  <meta name="twitter:description" content="Gaming WorkPlace (GWP): gaming, tutoriale și distracție pentru toți jucătorii!">
+  <meta name="twitter:image" content="https://gamingworkplace.github.io/Gaming-WorkPlace/gwplogo.png">
+
+  <link rel="icon" type="image/png" href="gwplogo.png" />
 
   <style>
     body {
@@ -175,7 +199,7 @@
 
 <header>
   <img src="gwplogo.png" alt="Gaming WorkPlace Logo" />
-  <h1>Gaming WorkPlace</h1>
+  <h1>Gaming WorkPlace (GWP)</h1>
   <nav>
     <a href="#about">About</a>
     <a href="#videos">Videos</a>
@@ -187,13 +211,13 @@
 
 <section id="about">
   <h2>About the Channel</h2>
-  <p>🎮 Welcome to <strong>Gaming WorkPlace</strong> — the place where passion for gaming turns into an epic experience! We are more than just gamers; we are creators who want to share our love for games through fun, creativity, and teamwork.</p>
+  <p>🎮 Welcome to <strong>Gaming WorkPlace (GWP)</strong> — the place where passion for gaming turns into an epic experience! We are more than just gamers; we are creators who want to share our love for games through fun, creativity, and teamwork.</p>
 
   <p>On our channel, you’ll find everything from intense competitive matches and survival adventures to creative building and community-driven challenges. Each video is made with attention and energy, aiming to bring a smile, inspire, and connect people who share the same passion for games.</p>
 
   <p>Whether you’re a long-time player or just starting your gaming journey, there’s always something new and exciting waiting for you here. Join us in discovering worlds, mastering skills, and having a great time together!</p>
 
-  <p>👉 Subscribe, stay connected, and be part of the <strong>Gaming WorkPlace</strong> family — where every gamer has a place to belong!</p>
+  <p>👉 Subscribe, stay connected, and be part of the <strong>Gaming WorkPlace (GWP)</strong> family — where every gamer has a place to belong!</p>
 
   <h3 class="subsection-title">About us</h3>
   <p>Hello, we are a group of people who want to make videos about certain games. We want all the videos we will make to have a positive effect on the person watching. The channel is dedicated to video games. The public regardless of age will have something interesting to find in the videos that we will make with love. 👋</p>
@@ -202,9 +226,7 @@
 <section id="videos">
   <h2>Latest Videos</h2>
   <p class="video-subtext">🎮 Check out our latest YouTube uploads — even if they’re older, they’re still packed with fun and energy!</p>
-  <div id="video-grid" class="video-grid">
-    <p>Loading latest videos...</p>
-  </div>
+  <div id="video-grid" class="video-grid"></div>
 </section>
 
 <section id="games">
@@ -237,7 +259,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Gaming WorkPlace | All rights reserved</p>
+  <p>© 2025 Gaming WorkPlace (GWP) | All rights reserved</p>
 </footer>
 
 <script>
@@ -285,6 +307,3 @@
 
 </body>
 </html>
-
-
-
